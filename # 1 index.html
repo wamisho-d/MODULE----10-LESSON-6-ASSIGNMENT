@@ -1,0 +1,61 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Characters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #fetch-characters {
+            padding: 10px 20px;
+            background-color: #f0141e;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #fetch-characters:hover {
+            background-color: #d0121b;
+        }
+        #characters-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .character-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            width: 200px;
+            text-align: center;
+        }
+        .character-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .character-card h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+        .character-card p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Marvel Characters</h1>
+    <button id="fetch-characters">Fetch Characters</button>
+    <div id="characters-container"></div>
+
+    <!-- Include md5 library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
+    <!-- Include application script -->
+    <script src="marvel-app.js" type="module"></script>
+</body>
+</html>
